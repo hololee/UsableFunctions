@@ -48,3 +48,9 @@ def binary_cal_precision_and_recall(img, target):
 # ============================== <semantic segmentation> ============================= #
 def semantic_cal_iou(img1, target):
     pass
+
+
+# ============================== <scores> ============================= #
+
+def cal_F1_score(precision, recall):
+    return 2 * (precision * recall / (precision + recall))
